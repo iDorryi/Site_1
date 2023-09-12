@@ -1,0 +1,38 @@
+.advantages {
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 104px;
+    width: 100%;
+    margin-top: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #222224;
+    height: 19%;
+    padding-bottom: 104px;
+}
+
+.adv {
+    @include flexColumn();
+    width: 33%;
+    padding-right: 30px;
+    align-content: center;
+    justify-content: center;
+
+    &_header {
+        @include fontSite(20px, 400);
+        color: #FBFBFB;
+        padding-bottom: 16px;
+    }
+
+    &_text_pros {
+        @include fontSite(14px, 300);
+        color: #FBFBFB;
+        text-align: center;
+        line-height: normal;
+    }
+
+    &_img {
+        padding-bottom: 25px;
+    }
+}

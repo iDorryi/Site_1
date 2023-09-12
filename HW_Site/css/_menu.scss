@@ -1,0 +1,153 @@
+.nav {
+    background-color: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 232px;
+    padding-top: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    margin-top: 24px;
+    right: -232px;
+    transition: right .3s;
+
+}
+
+
+#burger {
+    position: absolute;
+    left: -9999090999px;
+    visibility: hidden;
+
+    &:checked~.nav {
+        right: 0;
+    }
+
+
+}
+
+.strips:hover {
+    path {
+        fill: #EF5B70;
+    }
+
+    transition: 0.3s ease;
+    scale: 1.2;
+}
+
+.login:hover {
+    path {
+        fill: #EF5B70;
+    }
+
+    transition: 0.3s ease;
+    scale: 1.2;
+
+}
+
+.basket_logo:hover {
+    path {
+        fill: #EF5B70;
+    }
+
+    transition: 0.3s ease;
+    scale: 1.2;
+
+}
+
+
+
+
+.menu {
+    background-color: #222222;
+    position: relative;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    @include flexSpace;
+    align-content: center;
+
+    &_left {
+        display: flex;
+
+        &_logo_1:hover {
+            transition: 0.3s ease;
+            scale: 1.2;
+        }
+
+        &_loop:hover {
+            transition: 0.3s ease;
+            scale: 1.2;
+
+            path {
+                fill: #EF5B70;
+            }
+        }
+    }
+
+    &_right {
+        @include flexCenter;
+    }
+
+    &_black {
+        padding-left: 34px;
+        padding-bottom: 24px;
+        color: $colorBlack;
+        @include fontSite(14px, 700);
+
+    }
+}
+
+
+
+.pink {
+    &_men {
+        @include menu_pink();
+    }
+
+    &_women {
+        @include menu_pink();
+    }
+
+    &_kids {
+        @include menu_pink();
+    }
+}
+
+
+.dropdown-menu {
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
+}
+
+.dropdown-item:hover {
+    color: #F16D7F;
+}
+
+
+.i {
+    @include fontSite(14px, 400);
+    padding-left: 54px;
+    color: #6F6E6E;
+
+}
+
+
+.b_3 {
+    position: relative;
+    padding-left: 17px;
+
+    &::after {
+        border-radius: 25px;
+        position: absolute;
+        right: -15px;
+        bottom: 20px;
+        width: 15px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        content: "5";
+        color: white;
+        background-color: #F26376;
+
+    }
+}

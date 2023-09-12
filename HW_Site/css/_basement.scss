@@ -1,0 +1,49 @@
+.basement {
+    background-color: #222224;
+    ;
+    display: flex;
+    height: 2%;
+    justify-content: space-between;
+
+    &_text {
+        @include fontSite(16px, 400);
+        color: #FBFBFB;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &_left {
+        padding-left: 15%;
+        padding-right: 40%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    &_right {
+        padding-right: 15%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+}
+
+.twitter {
+    &:hover {
+        transition: 0.3s ease-in;
+        scale: 1.2;
+    }
+
+}
+
+.pinterest:hover {
+    transition: 0.3s ease-in;
+    scale: 1.2;
+}
