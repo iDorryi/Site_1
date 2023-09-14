@@ -1,0 +1,69 @@
+.top {
+    @include flexSpace();
+    background-color: #F8F3F4;
+
+    &_left {
+        padding-left: 14%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    &_right {
+        padding-right: 14%;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+
+    }
+}
+
+
+.new_arrivals {
+
+    color: $colorPink;
+    @include fontSite(24px, 700);
+
+}
+
+
+.top_right {
+    &_first {
+        color: #636363;
+        @include fontSite(14px, 300);
+    }
+
+    &_second {
+        color: $colorPink;
+        @include fontSite(14px, 700);
+    }
+}
+
+.shopping_card_text {
+    color: $colorPink;
+    @include fontSite(24px, 400);
+
+
+    &:hover {
+        scale: 1.02;
+        transition: 0.3s;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .top {
+        &_left {
+            padding-left: 16px;
+
+        }
+
+        &_right {
+            padding-right: 16px;
+
+        }
+    }
+}

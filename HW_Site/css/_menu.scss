@@ -1,136 +1,42 @@
-.nav {
-    background-color: #FFFFFF;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    width: 232px;
-    padding-top: 32px;
-    box-sizing: border-box;
-    position: absolute;
-    z-index: 2;
-    margin-top: 24px;
-    right: -232px;
-    transition: right .3s;
-
-}
-
-
-#burger {
-    position: absolute;
-    left: -9999090999px;
-    visibility: hidden;
-
-    &:checked~.nav {
-        right: 0;
-    }
-
-
-}
-
-.strips:hover {
-    path {
-        fill: #EF5B70;
-    }
-
-    transition: 0.3s ease;
-    scale: 1.2;
-}
-
-.login:hover {
-    path {
-        fill: #EF5B70;
-    }
-
-    transition: 0.3s ease;
-    scale: 1.2;
-
-}
-
-.basket_logo:hover {
-    path {
-        fill: #EF5B70;
-    }
-
-    transition: 0.3s ease;
-    scale: 1.2;
-
-}
-
-
-
-
 .menu {
-    background-color: #222222;
-    position: relative;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    @include flexSpace;
-    align-content: center;
+    height: 75px;
+    flex-shrink: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 
     &_left {
         display: flex;
+        justify-content: flex-start;
+        gap: 41px;
+        align-items: flex-end;
 
-        &_logo_1:hover {
-            transition: 0.3s ease;
-            scale: 1.2;
-        }
-
-        &_loop:hover {
-            transition: 0.3s ease;
-            scale: 1.2;
-
-            path {
-                fill: #EF5B70;
-            }
-        }
     }
 
     &_right {
-        @include flexCenter;
+        display: flex;
+        justify-content: flex-end;
+        gap: 25px;
+        align-items: center;
     }
 
     &_black {
-        padding-left: 34px;
-        padding-bottom: 24px;
-        color: $colorBlack;
-        @include fontSite(14px, 700);
-
+        @include menu_black();
     }
-}
 
-
-
-.pink {
-    &_men {
+    &_pink {
         @include menu_pink();
     }
 
-    &_women {
-        @include menu_pink();
+    &_i {
+        padding-left: 33.5px !important;
+
     }
 
-    &_kids {
-        @include menu_pink();
-    }
 }
-
-
-.dropdown-menu {
-    display: flex;
-    gap: 11px;
-    flex-direction: column;
-}
-
-.dropdown-item:hover {
-    color: #F16D7F;
-}
-
-
-.i {
-    @include fontSite(14px, 400);
-    padding-left: 54px;
-    color: #6F6E6E;
-
-}
-
 
 .b_3 {
     position: relative;
@@ -150,4 +56,67 @@
         background-color: #F26376;
 
     }
+}
+
+
+.big_img_area {
+    background-color: #F1E4E6;
+    ;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 65px;
+
+    &_left {
+        display: flex;
+        align-items: center;
+
+        &_img {
+            background-color: rgba(113, 103, 105, 0.08);
+
+        }
+    }
+
+    &_right {
+        width: 50%;
+        display: flex;
+        gap: 16px;
+
+        &_text {
+            width: 377px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+}
+
+
+.brand {
+    .center {
+        padding-left: calc(50% - 570px);
+        padding-right: calc(50% - 570px);
+    }
+
+    color: $colorBlack;
+    @include fontSite(48px, 900);
+
+    &:hover {
+        color: $colorPink;
+
+    }
+}
+
+.of_luxurious {
+
+    @include fontSite(32px, 700);
+    color: $colorBlack;
+}
+
+.fashion {
+    color: $colorPink;
+    @include fontSite(32px, 700);
+
 }

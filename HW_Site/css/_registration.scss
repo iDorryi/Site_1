@@ -7,7 +7,6 @@
 .registration_main_space {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding-top: 64px;
     padding-bottom: 96px;
 
@@ -18,15 +17,12 @@
         gap: 21px;
 
         &_name_text {
-            padding-top: 21px;
-            padding-bottom: 21px;
             color: $colorBlack;
             @include fontSite(16px, 300);
         }
 
         &_login_details {
-            padding-top: 35px;
-            padding-bottom: 21px;
+            padding-top: 14px;
             color: $colorBlack;
             @include fontSite(16px, 300);
 
@@ -57,7 +53,6 @@
 
 
         &_advice_text {
-            padding-bottom: 14px;
             width: 359px;
             color: #B1B1B1;
             @include fontSite(13px, 300);

@@ -7,7 +7,7 @@
     position: absolute;
     z-index: 2;
     margin-top: 24px;
-    right: -232px;
+    right: -250px;
     transition: right .3s;
 
 }
@@ -150,32 +150,6 @@
 }
 
 
-.top {
-    @include flexSpace();
-    height: 148px;
-    background-color: #F8F3F4;
-
-    &_left {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        padding-left: 14%;
-        display: flex;
-        justify-content: flex-start;
-
-    }
-}
-
-.shopping_card_text {
-    color: $colorPink;
-    @include fontSite(24px, 400);
-
-
-    &:hover {
-        scale: 1.02;
-        transition: 0.3s;
-    }
-}
-
 .main_area {
 
     display: flex;
@@ -213,7 +187,6 @@
     display: flex;
     flex-direction: row;
     width: 652px;
-    height: 300px;
     flex-shrink: 0;
     box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
 
@@ -343,6 +316,16 @@
 
 input {
     padding: 0 16px;
+}
+
+.shipping_area_text {
+    @include fontSite(16px, 300);
+    color: $colorBlack;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
 #ph {
@@ -478,11 +461,10 @@ input {
 .main_bot_buttons {
 
     display: flex;
-    gap: 192px;
+    justify-content: space-between;
     flex-direction: row;
     align-content: center;
-    padding-left: 230px;
-    padding-bottom: 128px;
+
 
     &_example {
         border: 1px solid gray;
@@ -500,27 +482,4 @@ input {
         }
     }
 
-}
-
-
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    $contentWidth: 736px;
-
-    .center {
-        padding-left: calc(50% - $contentWidth/2);
-        padding-right: calc(50% - $contentWidth/2);
-
-    }
-}
-
-@media (min-width: 375px) and (max-width: 768px) {
-    $contentWidth: 344px;
-
-    .center {
-        padding-left: calc(50% - $contentWidth/2);
-        padding-right: calc(50% - $contentWidth/2);
-
-    }
 }

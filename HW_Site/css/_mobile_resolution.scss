@@ -1,0 +1,310 @@
+@media (min-width: 375px) and (max-width: 768px) {
+    $contentWidth: 344px;
+
+    .center {
+        padding-left: calc(50% - $contentWidth/2);
+        padding-right: calc(50% - $contentWidth/2);
+
+    }
+
+    .main_bot_buttons {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+    }
+
+
+    .main_area {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &_right {
+            padding-top: 96px;
+            padding-bottom: 72px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &_left {
+            padding-top: 0;
+            gap: 16px;
+            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+
+            &_input_field {
+                padding-top: 0;
+                display: flex;
+                gap: 21px;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+
+    }
+
+    .order_card {
+        margin-top: 6%;
+        width: 360px;
+        display: flex;
+        flex-shrink: 0;
+        background-color: #F5F3F3;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-bottom: 96px;
+
+    }
+
+    .subtop {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 51px;
+        padding-bottom: 65px;
+
+    }
+
+    .filter {
+        &_heading {
+
+            display: none;
+        }
+
+        &_sort {
+
+
+            display: flex;
+            z-index: 10;
+            justify-content: flex-start;
+        }
+    }
+
+    .right_subtop {
+        position: relative;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        z-index: 2;
+    }
+
+    .carousel_section {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .carousel {
+        padding-bottom: 64px;
+    }
+
+    .arrow_left {
+        position: absolute;
+        top: 200px;
+    }
+
+    .arrow_right {
+        position: absolute;
+        top: 200px;
+
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo_1 {
+        width: 44px;
+        height: 38px;
+        flex-shrink: 0;
+    }
+
+    .loop {
+        width: 26px;
+        height: 26px;
+        flex-shrink: 0;
+    }
+
+
+    .b_2 {
+        display: none;
+    }
+
+    .b_3 {
+        display: none;
+    }
+
+    .menu_right {
+        background-image: url(../HW_Site/img/Strips.svg);
+        background-repeat: no-repeat;
+
+    }
+
+    .big_img_area {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 65px;
+        align-content: center;
+        align-items: center;
+        height: 363px;
+    }
+
+
+    .big_img_area_left {
+        display: none;
+    }
+
+    .brand {
+        font-size: 38px;
+    }
+
+    .of_luxurious {
+
+        font-size: 20px;
+    }
+
+    .fashion {
+
+        font-size: 20px;
+
+    }
+
+    .middle {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 96px;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .middle_preitem {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .bottom_item {
+        display: flex;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .advantages {
+        padding-right: 0;
+        padding-left: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .adv {
+        width: 80%;
+        padding-right: 0;
+    }
+
+    .subs_right {
+        padding-top: 60px;
+    }
+
+    .subscribe_section {
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .basement {
+        justify-content: center;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .basement_right {
+        padding-top: 50px;
+
+    }
+
+    .carousel_section {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .carousel {
+        padding-bottom: 64px;
+    }
+
+    .arrow_left {
+        position: absolute;
+        top: 200px;
+    }
+
+    .arrow_right {
+        position: absolute;
+        top: 200px;
+
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .registration_main_space {
+        flex-wrap: wrap;
+
+        &_left {}
+
+        &_right {}
+    }
+
+    .top {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        &_left {
+            padding-bottom: 32px;
+            padding-left: 0;
+        }
+
+        &_right {
+            padding-right: 0;
+            padding-top: 0;
+        }
+
+    }
+}
