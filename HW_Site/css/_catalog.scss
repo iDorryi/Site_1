@@ -184,6 +184,7 @@
 
 
 .filter {
+
     min-width: 360px;
     position: absolute;
 
@@ -204,11 +205,15 @@
     }
 
     &_sort {
-
+        display: flex;
+        justify-content: center;
         z-index: 10;
     }
 
     &_summary {
+        padding-top: 13px;
+        padding-bottom: 16px;
+        padding-left: 16px;
         display: flex;
         align-items: center;
         gap: 11px;
@@ -276,11 +281,12 @@
 
 
 .right_subtop {
+    padding-top: 13px;
     position: relative;
     right: 20%;
     display: flex;
     flex-direction: row;
-    z-index: 2;
+    z-index: 1;
 
     &_trending_now {
         padding-right: 10px;
@@ -338,12 +344,7 @@
         align-items: center;
     }
 
-
-
 }
-
-
-
 
 .pag_block {
     padding-bottom: 48px;
@@ -359,7 +360,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 18px;
 
     &_link {

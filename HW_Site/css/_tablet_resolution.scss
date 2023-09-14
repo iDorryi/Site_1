@@ -60,8 +60,9 @@
         min-width: 360px;
         position: absolute;
 
-
         &_sort {
+            display: flex;
+            justify-content: flex-start;
             z-index: 10;
         }
     }
@@ -141,17 +142,18 @@
 
     }
 
-
     .advantages {
-        align-items: center;
-        flex-direction: column;
+        padding-top: 64px;
         padding-bottom: 64px;
+        display: flex;
+        gap: 48px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
     }
 
 
-    .adv {
-        width: 55%;
-    }
 
     .subscribe_section {
 
@@ -164,13 +166,24 @@
 
     }
 
+    .figure_left_img {
+        padding-top: 64px;
+    }
+
+    .subs_right {
+        padding-top: 60px;
+    }
+
+
     .carousel_section {
         margin-right: 0;
         margin-left: 0;
+        border-top: 0.3px solid gray;
+        border-bottom: 0.3px solid gray;
     }
 
     .carousel {
-        padding-bottom: 64px;
+        padding-bottom: 0;
     }
 
     .arrow_left {
@@ -185,7 +198,11 @@
     }
 
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 360px);
+    }
+
+    .item_9_hidden {
+        display: none;
     }
 
     .third_item_hidden {

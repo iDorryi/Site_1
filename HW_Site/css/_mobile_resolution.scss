@@ -76,25 +76,37 @@
 
     .filter {
         &_heading {
-
             display: none;
         }
 
         &_sort {
-
-
+            left: 150px;
+            position: relative;
             display: flex;
             z-index: 10;
-            justify-content: flex-start;
+            align-items: center;
+        }
+
+
+        &_logo {
+
+            width: 37.5px;
+            height: 25px;
+
         }
     }
 
     .right_subtop {
         position: relative;
-        right: 0;
+        left: 55px;
         display: flex;
         flex-direction: row;
         z-index: 2;
+    }
+
+    .logo_v {
+        position: relative;
+        bottom: 4px;
     }
 
     .carousel_section {
@@ -220,18 +232,16 @@
     }
 
     .advantages {
-        padding-right: 0;
-        padding-left: 0;
+        padding-top: 66px;
+        padding-bottom: 66px;
+        display: flex;
+        gap: 48px;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
         align-items: center;
     }
 
-    .adv {
-        width: 80%;
-        padding-right: 0;
-    }
 
     .subs_right {
         padding-top: 60px;
@@ -245,6 +255,9 @@
         flex-direction: column;
     }
 
+    .figure_left_img {
+        padding-top: 64px;
+    }
 
     .basement {
         justify-content: center;
@@ -260,12 +273,16 @@
     }
 
     .carousel_section {
+        margin-bottom: 65px;
         margin-right: 0;
         margin-left: 0;
+        border-top: 0.3px solid gray;
+        border-bottom: 0.3px solid gray;
     }
 
     .carousel {
-        padding-bottom: 64px;
+        padding-bottom: 0px;
+
     }
 
     .arrow_left {
@@ -280,15 +297,24 @@
     }
 
     .cards {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 360px);
     }
 
     .registration_main_space {
         flex-wrap: wrap;
 
-        &_left {}
+        &_left {
+            &_advice_text {
+                padding-bottom: 29px;
 
-        &_right {}
+            }
+        }
+
+
+    }
+
+    .shopping_card_text {
+        padding-bottom: 69px;
     }
 
     .top {
