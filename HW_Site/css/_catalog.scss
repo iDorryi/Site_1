@@ -5,7 +5,7 @@
     padding-top: 32px;
     box-sizing: border-box;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     margin-top: 24px;
     right: -2232px;
     transition: right .3s;
@@ -14,19 +14,17 @@
 
 
 #burger {
-    position: absolute;
-    left: -9999090999px;
-    visibility: hidden;
+    right: 0px;
+    display: none;
 
     &:checked~.nav {
-        right: 0;
+        display: block;
+        animation: fade-in-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
 
 }
 
-
 .menu {
-
     position: relative;
     height: 75px;
     flex-shrink: 0;
@@ -43,8 +41,6 @@
         gap: 41px;
         align-items: flex-end;
         padding-left: 14%;
-        padding-top: 1%;
-        padding-bottom: 1%;
     }
 
     &_right {
@@ -62,12 +58,9 @@
 .menu_black {
     padding-left: 34px;
     padding-bottom: 24px;
-    color: #000;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    color: $colorBlack;
+    @include fontSite(14px, 700);
+
 
 
 }
@@ -102,14 +95,8 @@
 
     padding-left: 54px;
     color: #6F6E6E;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontSite(14px, 400);
 }
-
-
 
 
 .b_3 {
@@ -133,46 +120,6 @@
 }
 
 
-
-.add_to_cart {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    width: 212px;
-    height: 48.406px;
-    border: 1px solid #FF6A6A;
-    padding: 15px 39px 15px 39px;
-
-    &:hover {
-        transition: 0.5s;
-        scale: 1.2;
-
-    }
-
-}
-
-.text_add_to_cart {
-    text-decoration: $textdecorationStyle;
-    align-items: center;
-    color: #F26376;
-    font-family: Lato;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-}
-
-
-.img_add_to_cart {
-    background-color: white;
-
-}
-
-.bot_section {
-    display: flex;
-    justify-content: center;
-}
 
 .subtop {
     display: flex;
@@ -221,12 +168,8 @@
 
     &_heading {
 
-        color: #000;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+        color: $colorBlack;
+        @include fontSite(14px, 600)
     }
 
     &_item {
@@ -242,11 +185,7 @@
 
     &_link {
         color: #6F6E6E;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include fontSite(14px, 400);
         text-decoration: $textdecorationStyle ;
     }
 
@@ -262,11 +201,7 @@
         border-bottom: 1px solid #EBEBEB;
         border-left: 5px solid #EF5B70;
         color: #6F6E6E;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include fontSite(14px, 400);
 
         display: block;
 
@@ -300,18 +235,12 @@
     &_text {
         padding-bottom: 12px;
         color: #6F6E6E;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include fontSite(14px, 400);
         display: block;
 
         &::-webkit-details-marker {
             display: none;
         }
-
-
     }
 
 }
@@ -343,7 +272,6 @@
         gap: 9px;
         align-items: center;
     }
-
 }
 
 .pag_block {
@@ -369,10 +297,24 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+
+        &:hover {
+            color: #EF5B70
+        }
+    }
+}
+
+.pag_arrow {
+    &_right:hover {
+        path {
+            fill: #F16D7F
+        }
     }
 
-    &_link:hover {
-        color: #EF5B70
+    &_left:hover {
+        path {
+            fill: #F16D7F
+        }
     }
 
 }

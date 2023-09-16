@@ -5,16 +5,21 @@
 }
 
 .arrow {
-    &_right {
-        padding-left: 45%;
-
+    &_right:hover {
+        path {
+            fill: #F16D7F
+        }
     }
 
-    &_left {
-        padding-right: 1%;
-
+    &_left:hover {
+        path {
+            fill: #F16D7F
+        }
     }
+
 }
+
+
 
 .carousel-control-prev-icon {
     background-image: none !important;
@@ -39,53 +44,48 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+
+    &_title {
+        color: $colorPink;
+        @include fontSite(14px, 300);
+        padding-top: 65px;
+        padding-bottom: 12px;
+
+    }
+
+    &_devider {
+        padding-bottom: 12px;
+
+    }
+
+    &_subtitle {
+        color: #4D4D4D;
+        @include fontSite(18px, 300);
+        padding-bottom: 48px;
+
+    }
+
+    &_text {
+        color: #5E5E5E;
+        @include fontSite(14px, 300);
+        text-align: center;
+        padding-bottom: 32px;
+
+    }
+
+    &_price {
+        color: $colorPink;
+        @include fontSite(24px, 300);
+        padding-bottom: 65px;
+    }
+
+    &_vector {
+        padding-bottom: 49px;
+    }
 }
 
-.title {
-    color: #F16D7F;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-top: 65px;
-    padding-bottom: 12px;
-}
 
-.devider {
-    padding-bottom: 12px;
-}
 
-.subtitle {
-    color: #4D4D4D;
-    font-family: Lato;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-bottom: 48px;
-}
-
-.text {
-    color: #5E5E5E;
-    text-align: center;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-bottom: 32px;
-}
-
-.price {
-    color: #EF5B70;
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-bottom: 65px;
-}
 
 
 .span {
@@ -99,12 +99,16 @@
 
     &_text {
         color: #6F6E6E;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include fontSite(14px, 400);
+        gap: 10px;
 
+        &:hover {
+            path {
+                fill: #F26376;
+                transition: 0.3s;
+                scale: 1.02;
+            }
+        }
     }
 
     &_img {
@@ -113,6 +117,11 @@
     }
 }
 
+.bot_section {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 64px;
+}
 
 .add_to_cart {
     display: flex;
@@ -143,19 +152,6 @@
 
 }
 
-.vector {
-    padding-bottom: 65px;
-}
-
-.img_add_to_cart {
-    background-color: white;
-
-}
-
-.bot_section {
-    display: flex;
-    justify-content: center;
-}
 
 .cards {
     display: grid;

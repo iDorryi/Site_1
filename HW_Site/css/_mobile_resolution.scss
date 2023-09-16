@@ -154,10 +154,20 @@
         display: none;
     }
 
+    .menu_left {
+        padding-left: 2%;
+    }
+
     .menu_right {
         background-image: url(../HW_Site/img/Strips.svg);
         background-repeat: no-repeat;
+        padding-right: 0;
 
+
+    }
+
+    .other {
+        visibility: visible;
     }
 
     .big_img_area {
@@ -273,11 +283,17 @@
     }
 
     .carousel_section {
+        &_price {
+            padding-bottom: 31px;
+        }
+
         margin-bottom: 65px;
         margin-right: 0;
         margin-left: 0;
         border-top: 0.3px solid gray;
         border-bottom: 0.3px solid gray;
+        border-left: 0;
+        border-right: 0;
     }
 
     .carousel {
@@ -296,6 +312,12 @@
 
     }
 
+    .span_text {
+
+        @include fontSite(10px, 400);
+
+    }
+
     .cards {
         grid-template-columns: repeat(1, 360px);
     }
@@ -309,7 +331,6 @@
 
             }
         }
-
 
     }
 

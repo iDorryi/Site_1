@@ -1,3 +1,8 @@
+.logotype:hover {
+    transition: 0.3s;
+    scale: 1.1;
+}
+
 .big_img_area {
     background-color: #F1E4E6;
     display: flex;
@@ -217,25 +222,19 @@
 
 
 .img_item2 {
-
     width: 100%;
     flex-shrink: 0;
     background-image: url(../HW_Site/img/)
 }
 
 .bot {
+    margin-bottom: 95px;
     @include flexCenter();
-
 
     &_note {
 
         color: #F26376;
-        font-family: Lato;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-
+        @include fontSite(16px, 400);
         border: 1px solid #FF6A6A;
         padding: 15px 39px 15px 39px;
     }

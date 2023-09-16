@@ -17,6 +17,10 @@
     &_img {
         padding-top: 97px;
         padding-bottom: 30px;
+
+        &:hover {
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
     }
 
 }
